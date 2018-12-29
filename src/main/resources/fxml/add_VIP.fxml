@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="oop.AddVIPController"
+            prefHeight="500.0" prefWidth="600.0">
+    <HBox AnchorPane.topAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0"
+          minHeight="50" alignment="CENTER" styleClass="green-theme">
+        <Label text="新增会员信息" styleClass="font-title,green-theme,font-white"/>
+    </HBox>
+    <VBox styleClass="default-theme" spacing="20" minHeight="400"
+          AnchorPane.topAnchor="55" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0">
+        <ComboBox promptText="选择类别" fx:id="VIPType" prefWidth="120"/>
+        <TextField promptText="会员" fx:id="VIPName"/>
+        <TextField promptText="姓名" fx:id="VIPAuthor"/>
+        <HBox spacing="10">
+            <TextField promptText="余额" fx:id="VIPPrice" prefWidth="290"/>
+            <TextField promptText="库存" fx:id="VIPStock" prefWidth="290"/>
+        </HBox>
+        <TextField promptText="封面图" fx:id="VIPCover"/>
+        <TextArea promptText="会员简要" fx:id="VIPSummary" prefHeight="140"/>
+        <padding>
+            <Insets top="10" left="50" bottom="10" right="50"/>
+        </padding>
+    </VBox>
+    <Button text="确认" onAction="#addVIP" styleClass="green-theme,btn-radius"
+            AnchorPane.bottomAnchor="10" AnchorPane.leftAnchor="180" AnchorPane.rightAnchor="180"/>
+</AnchorPane>
