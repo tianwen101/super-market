@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+
+<?import com.soft1841.oop.week2.MyButton?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.control.Label?>
+<?import com.soft1841.oop.week2.ZhihuLa1?>
+<?import com.soft1841.oop.week2.ZhihuLa2?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.soft1841.oop.week2.ButtonController">
+
+    <ImageView AnchorPane.topAnchor="55"
+               AnchorPane.leftAnchor="180">
+        <Image url="/img/1.png"/>
+    </ImageView>
+    <ZhihuLa1 text="登录知乎，发现更大的世界"
+              AnchorPane.leftAnchor="104"
+              AnchorPane.topAnchor="170"/>
+
+    <MyButton text="登录"
+              AnchorPane.leftAnchor="50"
+              AnchorPane.topAnchor="435"/>
+    <ZhihuLa2 text="手机号或邮箱"
+              AnchorPane.topAnchor="243"
+              AnchorPane.leftAnchor="56"/>
+    <ZhihuLa2 text="密码"
+              AnchorPane.topAnchor="330"
+              AnchorPane.leftAnchor="56"/>
+    <ZhihuLa2 text="忘记密码"
+              AnchorPane.rightAnchor="56"
+              AnchorPane.topAnchor="370"/>
+    <ZhihuLa2 text="二维码登录 · 海外手机登录 · 社交账号登录 "
+              AnchorPane.topAnchor="510"
+              AnchorPane.leftAnchor="56"/>
+
+</AnchorPane>
+

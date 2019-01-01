@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import com.soft1841.oop.week3.QQLa1?>
+<?import com.soft1841.oop.week3.MyButton?>
+<?import com.soft1841.oop.week3.QQLa2?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.soft1841.oop.week3.ButtonController">
+    <ImageView AnchorPane.topAnchor="55"
+               AnchorPane.leftAnchor="200">
+        <Image url="/img/2.png"/>
+    </ImageView>
+    <ImageView AnchorPane.topAnchor="330"
+               AnchorPane.rightAnchor="100">
+        <Image url="/img/3.png"/>
+    </ImageView>
+    <QQLa1 text="欢迎登录QQ"
+           AnchorPane.leftAnchor="200"
+           AnchorPane.topAnchor="210"/>
+    <MyButton text="登录"
+              AnchorPane.leftAnchor="50"
+              AnchorPane.topAnchor="435"/>
+    <QQLa2 text="手机号码："
+           AnchorPane.topAnchor="250"
+           AnchorPane.leftAnchor="56"/>
+    <QQLa2 text="密码："
+           AnchorPane.topAnchor="330"
+           AnchorPane.leftAnchor="56"/>
+    <QQLa2 text="忘记密码/二维码登录"
+           AnchorPane.rightAnchor="56"
+           AnchorPane.topAnchor="370"/>
+</AnchorPane>
